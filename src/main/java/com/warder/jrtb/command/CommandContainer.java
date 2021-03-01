@@ -2,8 +2,10 @@ package com.warder.jrtb.command;
 
 import com.google.common.collect.ImmutableMap;
 import com.warder.jrtb.service.SendBotMessageService;
+import org.springframework.stereotype.Component;
 
 import static com.warder.jrtb.command.CommandName.*;
+
 
 public class CommandContainer {
     private final ImmutableMap<String, Command> commands;

@@ -7,7 +7,7 @@ public class UnknownCommand implements Command {
 
     private final SendBotMessageService messageService;
 
-    private static final String UNKNOWN_MESSAGE = "Ваша команда не понятна для меня!";
+    public static final String UNKNOWN_MESSAGE = "Ваша команда не понятна для меня!";
 
     public UnknownCommand(SendBotMessageService messageService) {
         this.messageService = messageService;
