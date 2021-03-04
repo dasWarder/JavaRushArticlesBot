@@ -10,10 +10,11 @@ public class HelpCommand implements Command {
     private final SendBotMessageService messageService;
 
     public static final String HELP_MESSAGE = String.format("<b> Список комманд: </b>\n\n" +
+            "%s - получить помощь\n" +
             "<b> Команды, чтобы начать\\закончить работу</b>\n" +
             "%s - начать работу\n" +
-            "%s - приостановить работу\n" +
-            "%s - получить помощь\n", START.getCommandName(), STOP.getCommandName(), HELP.getCommandName());
+            "%s - приостановить работу\n",
+            HELP.getCommandName(), START.getCommandName(), STOP.getCommandName());
 
     public HelpCommand(SendBotMessageService messageService) {
         this.messageService = messageService;

@@ -3,6 +3,7 @@ package com.warder.jrtb.command;
 import com.warder.jrtb.bot.JRTelegramBot;
 import com.warder.jrtb.service.SendBotMessageService;
 import com.warder.jrtb.service.SendMessageService;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
@@ -20,6 +21,7 @@ public abstract class AbstractCommandTest {
 
     abstract Command getCommand();
 
+    @Test
     public void correctCommandExecution() throws TelegramApiException {
 
         Long chatId = 1234567824356L;
