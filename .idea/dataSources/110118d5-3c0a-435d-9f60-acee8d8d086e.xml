@@ -809,7 +809,7 @@ true posixrules
     <database id="7" parent="1" name="jrtb-db">
       <ObjectId>77971</ObjectId>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>36787</IntrospectionStateNumber>
+      <IntrospectionStateNumber>36807</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="8" parent="1" name="postgres">
@@ -871,7 +871,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>562</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>36788</IntrospectionStateNumber>
+      <IntrospectionStateNumber>36808</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="20" parent="7" name="btree">

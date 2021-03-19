@@ -1,7 +1,6 @@
 com\warder\jrtb\command\StartCommandTest.class
 com\warder\jrtb\command\NoCommandTest.class
 com\warder\jrtb\command\CommandContainerTest.class
-com\warder\jrtb\JavarushTelegramBotApplicationTests.class
 com\warder\jrtb\command\HelpCommandTest.class
 com\warder\jrtb\service\SendMessageServiceTest.class
 com\warder\jrtb\command\StopCommandTest.class
