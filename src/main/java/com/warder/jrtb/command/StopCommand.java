@@ -10,6 +10,7 @@ public class StopCommand implements Command {
     private final TelegramUserService telegramUserService;
 
     public static final String STOP_MESSAGE = "Деактивировал все ваши подписки!";
+
     @Autowired
     public StopCommand(SendBotMessageService messageService, TelegramUserService telegramUserService) {
         this.messageService = messageService;

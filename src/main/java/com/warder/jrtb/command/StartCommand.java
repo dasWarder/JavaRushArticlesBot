@@ -1,6 +1,6 @@
 package com.warder.jrtb.command;
 
-import com.warder.jrtb.repository.TelegramUser;
+import com.warder.jrtb.repository.users.TelegramUser;
 import com.warder.jrtb.service.SendBotMessageService;
 import com.warder.jrtb.service.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;

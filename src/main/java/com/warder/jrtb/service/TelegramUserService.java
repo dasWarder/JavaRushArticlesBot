@@ -1,6 +1,6 @@
 package com.warder.jrtb.service;
 
-import com.warder.jrtb.repository.TelegramUser;
+import com.warder.jrtb.repository.users.TelegramUser;
 import java.util.*;
 
 
