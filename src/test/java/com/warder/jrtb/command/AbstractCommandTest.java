@@ -1,9 +1,9 @@
 package com.warder.jrtb.command;
 
 import com.warder.jrtb.bot.JRTelegramBot;
-import com.warder.jrtb.service.SendBotMessageService;
-import com.warder.jrtb.service.SendMessageService;
-import com.warder.jrtb.service.TelegramUserService;
+import com.warder.jrtb.service.sendMessage.SendBotMessageService;
+import com.warder.jrtb.service.sendMessage.SendMessageService;
+import com.warder.jrtb.service.user.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

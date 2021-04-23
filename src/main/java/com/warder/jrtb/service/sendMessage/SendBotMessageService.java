@@ -1,4 +1,4 @@
-package com.warder.jrtb.service;
+package com.warder.jrtb.service.sendMessage;
 
 public interface SendBotMessageService {
 

@@ -2,6 +2,7 @@ package com.warder.jrtb.javarushclient;
 
 import com.warder.jrtb.javarushclient.dto.GroupCountRequestArgs;
 import com.warder.jrtb.javarushclient.dto.GroupDiscussionInfo;
+import com.warder.jrtb.javarushclient.dto.GroupInfo;
 import com.warder.jrtb.javarushclient.dto.GroupRequestArgs;
 import kong.unirest.GenericType;
 import kong.unirest.Unirest;
@@ -20,19 +21,19 @@ public class JavaRushGroupClientImpl implements JavaRushGroupClient {
     }
 
     @Override
-    public List getGroupList(GroupRequestArgs requestArgs) {
+    public List<GroupInfo> getGroupList(GroupRequestArgs requestArgs) {
         return Unirest.get(javarushApiGroupPath)
                 .queryString(requestArgs.populateQueries())
-                .asObject(new GenericType<List>() {
+                .asObject(new GenericType<List<GroupInfo>>() {
                 })
                 .getBody();
     }
 
     @Override
-    public List getGroupDiscussionList(GroupRequestArgs requestArgs) {
+    public List<GroupDiscussionInfo> getGroupDiscussionList(GroupRequestArgs requestArgs) {
         return Unirest.get(javarushApiGroupPath)
                 .queryString(requestArgs.populateQueries())
-                .asObject(new GenericType<List>() {
+                .asObject(new GenericType<List<GroupDiscussionInfo>>() {
                 })
                 .getBody();
     }

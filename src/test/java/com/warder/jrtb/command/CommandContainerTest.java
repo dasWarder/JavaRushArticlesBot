@@ -1,13 +1,12 @@
 package com.warder.jrtb.command;
 
-import com.warder.jrtb.service.SendBotMessageService;
-import com.warder.jrtb.service.TelegramUserService;
-import org.junit.jupiter.api.Assertions;
+import com.warder.jrtb.javarushclient.JavaRushGroupClient;
+import com.warder.jrtb.service.groupSub.GroupSubService;
+import com.warder.jrtb.service.sendMessage.SendBotMessageService;
+import com.warder.jrtb.service.user.TelegramUserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
 import java.util.Arrays;
 
@@ -23,7 +22,9 @@ class CommandContainerTest {
     public void init() {
         SendBotMessageService messageService = Mockito.mock(SendBotMessageService.class);
         TelegramUserService userService = Mockito.mock(TelegramUserService.class);
-        commandContainer = new CommandContainer(messageService, userService);
+        JavaRushGroupClient groupClient = Mockito.mock(JavaRushGroupClient.class);
+        GroupSubService groupSubService = Mockito.mock(GroupSubService.class);
+        commandContainer = new CommandContainer(messageService, userService, groupClient, groupSubService);
     }
 
     @Test

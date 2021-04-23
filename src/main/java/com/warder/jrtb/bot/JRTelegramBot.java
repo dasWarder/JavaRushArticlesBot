@@ -1,13 +1,14 @@
 package com.warder.jrtb.bot;
 
 import com.warder.jrtb.command.CommandContainer;
-import com.warder.jrtb.service.SendMessageService;
-import com.warder.jrtb.service.TelegramUserService;
+import com.warder.jrtb.javarushclient.JavaRushGroupClient;
+import com.warder.jrtb.service.groupSub.GroupSubService;
+import com.warder.jrtb.service.sendMessage.SendMessageService;
+import com.warder.jrtb.service.user.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 
@@ -26,9 +27,10 @@ public class JRTelegramBot extends TelegramLongPollingBot {
 
     private final CommandContainer commandContainer;
 
+
     @Autowired
-    public JRTelegramBot(TelegramUserService userService) {
-        this.commandContainer = new CommandContainer(new SendMessageService(this), userService);
+    public JRTelegramBot(TelegramUserService userService, JavaRushGroupClient groupClient, GroupSubService groupSubService) {
+        this.commandContainer = new CommandContainer(new SendMessageService(this), userService, groupClient, groupSubService);
     }
 
     @Override

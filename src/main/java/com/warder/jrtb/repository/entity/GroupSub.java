@@ -1,8 +1,7 @@
-package com.warder.jrtb.repository.subs;
+package com.warder.jrtb.repository.entity;
 
-
-import com.warder.jrtb.repository.users.TelegramUser;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,9 +12,11 @@ import static java.util.Objects.isNull;
 @Data
 @Entity
 @Table(name = "group_sub")
+@EqualsAndHashCode
 public class GroupSub {
 
     @Id
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "title")

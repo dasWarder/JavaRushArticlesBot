@@ -1,6 +1,6 @@
 package com.warder.jrtb.command;
 
-import com.warder.jrtb.service.SendBotMessageService;
+import com.warder.jrtb.service.sendMessage.SendBotMessageService;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public class NoCommand implements Command {

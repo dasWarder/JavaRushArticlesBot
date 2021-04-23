@@ -1,8 +1,8 @@
-package com.warder.jrtb.repository.users;
+package com.warder.jrtb.repository.entity;
 
 
-import com.warder.jrtb.repository.subs.GroupSub;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,6 +13,7 @@ import static java.util.Objects.isNull;
 @Data
 @Entity
 @Table(name = "tg_user")
+@EqualsAndHashCode
 public class TelegramUser {
 
     @Id

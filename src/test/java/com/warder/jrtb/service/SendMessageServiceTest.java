@@ -1,6 +1,8 @@
 package com.warder.jrtb.service;
 
 import com.warder.jrtb.bot.JRTelegramBot;
+import com.warder.jrtb.service.sendMessage.SendBotMessageService;
+import com.warder.jrtb.service.sendMessage.SendMessageService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

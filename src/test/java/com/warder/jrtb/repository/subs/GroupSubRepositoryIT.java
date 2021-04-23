@@ -1,6 +1,7 @@
 package com.warder.jrtb.repository.subs;
 
-import com.warder.jrtb.repository.users.TelegramUser;
+import com.warder.jrtb.repository.entity.GroupSub;
+import com.warder.jrtb.repository.entity.TelegramUser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,6 @@ import org.springframework.test.context.jdbc.Sql;
 
 import java.util.List;
 import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 @DataJpaTest
@@ -33,7 +32,7 @@ class GroupSubRepositoryIT {
 
         for(int i = 0; i < users.size(); i++) {
             Assertions.assertEquals(String.valueOf(i + 1), users.get(i).getChat_id());
-            Assertions.assertTrue(users.get(i).isActive()); 
+            Assertions.assertTrue(users.get(i).isActive());
         }
     }
 

@@ -1,8 +1,7 @@
 package com.warder.jrtb.repository.users;
 
-import com.warder.jrtb.repository.subs.GroupSub;
-import com.warder.jrtb.repository.users.TelegramUser;
-import com.warder.jrtb.repository.users.TelegramUserRepository;
+import com.warder.jrtb.repository.entity.GroupSub;
+import com.warder.jrtb.repository.entity.TelegramUser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

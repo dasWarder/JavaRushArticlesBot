@@ -1,6 +1,6 @@
-package com.warder.jrtb.service;
+package com.warder.jrtb.service.user;
 
-import com.warder.jrtb.repository.users.TelegramUser;
+import com.warder.jrtb.repository.entity.TelegramUser;
 import com.warder.jrtb.repository.users.TelegramUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

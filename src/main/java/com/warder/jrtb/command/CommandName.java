@@ -6,7 +6,8 @@ public enum CommandName {
     HELP("/help"),
     STOP("/stop"),
     NO(""),
-    STAT("/stat");
+    STAT("/stat"),
+    ADD_GROUP_SUB("/addgroupsub");
 
     private final String commandName;
 
