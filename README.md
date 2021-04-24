@@ -15,3 +15,7 @@
 0.5.0-SNAPSHOT:
 * added ability to subscribe on groups
 * added ability to see the list of the group subscriptions
+
+0.6.0-SNAPSHOT:
+* added ability to delete a group from the subscriptions
+* added ability to see the list of the group subscriptions ready for delete

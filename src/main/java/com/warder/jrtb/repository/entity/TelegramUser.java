@@ -13,7 +13,7 @@ import static java.util.Objects.isNull;
 @Data
 @Entity
 @Table(name = "tg_user")
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude = "subscribes")
 public class TelegramUser {
 
     @Id

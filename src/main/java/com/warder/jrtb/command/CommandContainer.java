@@ -25,6 +25,7 @@ public class CommandContainer {
                 .put(STAT.getCommandName(), new StatCommand(messageService, userService))
                 .put(ADD_GROUP_SUB.getCommandName(), new AddGroupSubCommand(messageService, groupClient, groupSubService))
                 .put(LIST_GROUP_SUB.getCommandName(), new ListGroupSubCommand(messageService, userService))
+                .put(DELETE_GROUP_SUB.getCommandName(), new DeleteGroupSubCommand(groupSubService, userService, messageService))
                 .build();
 
         unknownCommand = new UnknownCommand(messageService);
