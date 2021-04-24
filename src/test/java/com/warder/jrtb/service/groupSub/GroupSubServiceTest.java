@@ -30,7 +30,7 @@ class GroupSubServiceTest {
         groupSubService = new GroupSubServiceImpl(groupSubRepository, userService);
 
         newUser = new TelegramUser();
-        newUser.setChat_id(CHAT_ID);
+        newUser.setChatId(CHAT_ID);
         newUser.setActive(true);
 
         Mockito.when(userService.findByChatId(CHAT_ID)).thenReturn(Optional.of(newUser));
@@ -56,7 +56,7 @@ class GroupSubServiceTest {
 
         TelegramUser oldUser = new TelegramUser();
         oldUser.setActive(true);
-        oldUser.setChat_id("2");
+        oldUser.setChatId("2");
 
         GroupDiscussionInfo groupDiscussionInfo = new GroupDiscussionInfo();
         groupDiscussionInfo.setId(1);

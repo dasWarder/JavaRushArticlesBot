@@ -32,12 +32,12 @@ class TelegramUserRepositoryIT {
     @Test
     public void shouldCorrectSaveTgUsers() {
         TelegramUser user = new TelegramUser();
-        user.setChat_id("1241343868");
+        user.setChatId("1241343868");
         user.setActive(false);
 
         telegramUserRepository.save(user);
 
-        Optional<TelegramUser> saved = telegramUserRepository.findById(user.getChat_id());
+        Optional<TelegramUser> saved = telegramUserRepository.findById(user.getChatId());
 
         Assertions.assertTrue(saved.isPresent());
         Assertions.assertEquals(user, saved.get());

@@ -14,8 +14,12 @@ public class HelpCommand implements Command {
             "<b> Команды, чтобы начать\\закончить работу</b>\n" +
             "%s - начать работу\n" +
             "%s - приостановить работу\n" +
-            "%s - получить статистику\n",
-            HELP.getCommandName(), START.getCommandName(), STOP.getCommandName(), STAT.getCommandName());
+            "%s - получить статистику\n" +
+            "%s - посмотреть список групп, доступных для подписки\n" +
+            "%s <i> номер группы</i> - подписаться на группу с указанным ID\n" +
+            "%s - посмотреть текущие подписки\n",
+            HELP.getCommandName(), START.getCommandName(), STOP.getCommandName(), STAT.getCommandName(),
+            ADD_GROUP_SUB.getCommandName(), ADD_GROUP_SUB.getCommandName(), LIST_GROUP_SUB.getCommandName());
 
     public HelpCommand(SendBotMessageService messageService) {
         this.messageService = messageService;

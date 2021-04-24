@@ -34,7 +34,7 @@ public class GroupSubServiceImpl implements GroupSubService{
         if(groupSubFromDB.isPresent()) {
             groupSub = groupSubFromDB.get();
             Optional<TelegramUser> first = groupSub.getUsers().stream()
-                    .filter(u -> u.getChat_id().equalsIgnoreCase(chatId))
+                    .filter(u -> u.getChatId().equalsIgnoreCase(chatId))
                     .findFirst();
             if(first.isEmpty()) {
                 groupSub.addUser(user);
