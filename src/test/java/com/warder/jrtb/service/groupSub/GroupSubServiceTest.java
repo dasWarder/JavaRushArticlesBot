@@ -12,7 +12,6 @@ import org.mockito.Mockito;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName(value = "Unit-level testing for GroupSubService")
 class GroupSubServiceTest {

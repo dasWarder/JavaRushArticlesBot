@@ -1,0 +1,14 @@
+version: '3.1'
+
+jrab:
+  services:
+    jrab-db:
+      image: mysql
+      restart: always
+      container_name: dev_jrab_db
+      ports:
+        - "3306:3306"
+      environment:
+        MYSQL_DATABASE: "dev_jrab_db"
+        MYSQL_ROOT_PASSWORD: root
+
