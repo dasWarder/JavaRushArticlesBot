@@ -1,9 +1,7 @@
 package com.warder.jrtb.command;
 
-import com.warder.jrtb.javarushclient.JavaRushGroupClient;
 import com.warder.jrtb.repository.entity.GroupSub;
 import com.warder.jrtb.repository.entity.TelegramUser;
-import com.warder.jrtb.service.groupSub.GroupSubService;
 import com.warder.jrtb.service.sendMessage.SendBotMessageService;
 import com.warder.jrtb.service.user.TelegramUserService;
 import org.telegram.telegrambots.meta.api.objects.Update;

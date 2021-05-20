@@ -1,18 +1,20 @@
-package com.warder.jrtb.javarushclient;
+package com.warder.jrtb.javarushclient.groupClient;
 
 import com.warder.jrtb.javarushclient.dto.GroupCountRequestArgs;
 import com.warder.jrtb.javarushclient.dto.GroupDiscussionInfo;
 import com.warder.jrtb.javarushclient.dto.GroupRequestArgs;
 import com.warder.jrtb.javarushclient.dto.MeGroupInfoType;
+import com.warder.jrtb.javarushclient.groupClient.JavaRushGroupClient;
+import com.warder.jrtb.javarushclient.groupClient.JavaRushGroupClientImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static com.warder.jrtb.util.StaticVariablesStorage.JAVARUSH_API_PATH;
 
-class JavaRushGroupClientImplTest {
+class JavaRushGroupClientTest {
 
-    private final JavaRushGroupClient groupClient = new JavaRushGroupClientImpl("https://javarush.ru/api/1.0/rest");
+    private final JavaRushGroupClient groupClient = new JavaRushGroupClientImpl(JAVARUSH_API_PATH);
 
 
     @Test

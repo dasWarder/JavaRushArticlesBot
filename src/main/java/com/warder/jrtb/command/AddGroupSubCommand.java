@@ -1,6 +1,6 @@
 package com.warder.jrtb.command;
 
-import com.warder.jrtb.javarushclient.JavaRushGroupClient;
+import com.warder.jrtb.javarushclient.groupClient.JavaRushGroupClient;
 import com.warder.jrtb.javarushclient.dto.GroupDiscussionInfo;
 import com.warder.jrtb.javarushclient.dto.GroupRequestArgs;
 import com.warder.jrtb.repository.entity.GroupSub;

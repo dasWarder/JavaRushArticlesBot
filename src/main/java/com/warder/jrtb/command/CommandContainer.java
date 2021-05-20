@@ -1,12 +1,10 @@
 package com.warder.jrtb.command;
 
 import com.google.common.collect.ImmutableMap;
-import com.warder.jrtb.javarushclient.JavaRushGroupClient;
+import com.warder.jrtb.javarushclient.groupClient.JavaRushGroupClient;
 import com.warder.jrtb.service.groupSub.GroupSubService;
 import com.warder.jrtb.service.sendMessage.SendBotMessageService;
 import com.warder.jrtb.service.user.TelegramUserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import static com.warder.jrtb.command.CommandName.*;
 

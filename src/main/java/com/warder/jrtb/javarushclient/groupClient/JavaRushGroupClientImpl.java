@@ -1,4 +1,4 @@
-package com.warder.jrtb.javarushclient;
+package com.warder.jrtb.javarushclient.groupClient;
 
 import com.warder.jrtb.javarushclient.dto.GroupCountRequestArgs;
 import com.warder.jrtb.javarushclient.dto.GroupDiscussionInfo;
