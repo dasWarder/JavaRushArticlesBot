@@ -19,3 +19,8 @@
 0.6.0-SNAPSHOT:
 * added ability to delete a group from the subscriptions
 * added ability to see the list of the group subscriptions ready for delete
+
+0.7.0-SNAPSHOT
+* added ability to send notification about new articles
+* added ability to set inactive telegram user
+* added ability to set active user and/or start using it
